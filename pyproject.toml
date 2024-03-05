@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "juguete2024"
+authors = [{name = "Isaac Abimael Cervantes", email = "isaac@acervantes@gmail.com"}]
+dynamic = ["version", "description"]
+
+[project.urls]
+Home = "https://github.com/k3nsh1n-h1mur4/juguete"

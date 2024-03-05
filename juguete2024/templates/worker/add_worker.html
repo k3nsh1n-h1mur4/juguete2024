@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% from '_helpers.html' import render_field %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+
+{% block content %} 
+    <form method="POST">
+    <dl>
+	{{ render_field(form.app, class="form-control") }}	
+	{{ render_field(form.apm, class="form-control") }}	
+	{{ render_field(form.nombres, class="form-control") }}	
+	{{ render_field(form.edad, class="form-control") }}	
+	{{ render_field(form.sexo, class="form-control") }}	
+	{{ render_field(form.matricula, class="form-control") }}	
+	{{ render_field(form.adscripcion, class="form-control") }}	
+	{{ render_field(form.horario, class="form-control") }}	
+    </dl>
+    <p><input type="submit" value="Registrar" class="btn btn-primary"></p>
+</form> 
+
+{% endblock %}
